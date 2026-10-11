@@ -1,0 +1,10 @@
+{
+  "_aide": "Copiez ce fichier en « comptes.json » et choisissez vos mots de passe (8 caractères minimum). Ne partagez jamais comptes.json.",
+  "fondateur": { "email": "fondateur@sentinelle-demo.com", "motDePasse": "CHANGEZ-MOI-1", "nom": "Emmanuel Houngbédji" },
+  "branches": {
+    "cotonou":       { "email": "cotonou@sentinelle-demo.com",       "motDePasse": "CHANGEZ-MOI-2", "nom": "Koffi T. Adjabla" },
+    "porto-novo":    { "email": "porto-novo@sentinelle-demo.com",    "motDePasse": "CHANGEZ-MOI-3", "nom": "Marie-Ange Houédji" },
+    "parakou":       { "email": "parakou@sentinelle-demo.com",       "motDePasse": "CHANGEZ-MOI-4", "nom": "Jonas Kpatchavi" },
+    "abomey-calavi": { "email": "abomey-calavi@sentinelle-demo.com", "motDePasse": "CHANGEZ-MOI-5", "nom": "Léonce Gbaguidi" }
+  }
+}

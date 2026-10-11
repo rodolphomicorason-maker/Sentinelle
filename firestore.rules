@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---- Fonctions utilitaires (les rôles viennent des « custom claims » posés par le script de remplissage) ----
+    function signedIn() { return request.auth != null; }
+    function claim(k) { return request.auth.token[k]; }
+    function isFounder(org) { return signedIn() && claim('role') == 'fondateur' && claim('orgId') == org; }
+    function isBranch(org, b) { return signedIn() && claim('role') == 'pasteur' && claim('orgId') == org && claim('branchId') == b; }
+    function inOrg(org) { return signedIn() && claim('orgId') == org; }
+
+    // ---- Profil de l'utilisateur connecté : lecture de son propre profil uniquement ----
+    match /users/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    match /orgs/{org} {
+      allow read: if inOrg(org);
+      allow write: if isFounder(org);
+
+      // ---- Églises branches ----
+      match /branches/{b} {
+        allow read: if isFounder(org) || isBranch(org, b);
+        allow create, delete: if isFounder(org);
+        // le fondateur modifie tout ; la branche ne peut mettre à jour que ses effectifs et ses coordonnées
+        allow update: if isFounder(org)
+          || (isBranch(org, b) && request.resource.data.diff(resource.data).affectedKeys()
+              .hasOnly(['members', 'baptises', 'phone', 'email', 'address']));
+
+        // ---- Données de la branche : le pasteur écrit, le fondateur consulte ----
+        match /{sub}/{id} {
+          allow read: if isFounder(org) || isBranch(org, b);
+          allow write: if isBranch(org, b);
+        }
+      }
+
+      // ---- Données de l'organisation : le fondateur gère ----
+      match /pastors/{id} { allow read, write: if isFounder(org); }
+      match /orgUsers/{id} { allow read, write: if isFounder(org); }
+      match /audit/{id} { allow read, write: if isFounder(org); }
+      match /monthly/{id} { allow read, write: if isFounder(org); }
+      match /relances/{id} {
+        allow read: if isFounder(org) || (isBranch(org, resource.data.branchId));
+        allow write: if isFounder(org);
+      }
+      match /events/{id} {
+        allow read: if inOrg(org);
+        allow write: if isFounder(org);
+      }
+    }
+
+    // ---- Lectures « toutes branches » pour le fondateur (collectionGroup) ----
+    match /{path=**}/members/{id}      { allow read: if signedIn() && claim('role') == 'fondateur'; }
+    match /{path=**}/activities/{id}   { allow read: if signedIn() && claim('role') == 'fondateur'; }
+    match /{path=**}/finOps/{id}       { allow read: if signedIn() && claim('role') == 'fondateur'; }
+    match /{path=**}/genReports/{id}   { allow read: if signedIn() && claim('role') == 'fondateur'; }
+    match /{path=**}/transmitted/{id}  { allow read: if signedIn() && claim('role') == 'fondateur'; }
+  }
+}

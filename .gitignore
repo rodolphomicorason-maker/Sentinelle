@@ -1,0 +1,7 @@
+node_modules
+comptes.json
+service-account.json
+.env
+.env.local
+.vercel
+.firebase

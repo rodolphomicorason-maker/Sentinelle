@@ -1,0 +1,13 @@
+{
+  "name": "sentinelle-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Démonstration connectée de Sentinelle (Vercel + Firebase)",
+  "scripts": {
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0"
+  },
+  "engines": { "node": ">=18" }
+}
