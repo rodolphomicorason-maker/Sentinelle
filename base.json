@@ -1,0 +1,765 @@
+{
+ "org": {
+  "id": "egdlg",
+  "name": "Église de la Grâce",
+  "founder": "Emmanuel Houngbédji",
+  "founderFn": "Pasteur fondateur",
+  "country": "Bénin",
+  "region": "Littoral",
+  "city": "Cotonou",
+  "address": "Quartier Gbégamey, Cotonou",
+  "phone": "+229 01 21 30 45 12",
+  "email": "contact@egdlg.org",
+  "website": "www.egdlg.org",
+  "createdOn": "15 janvier 2018"
+ },
+ "rights": [
+  {
+   "f": "Voir le tableau de bord",
+   "adm": true
+  },
+  {
+   "f": "Gérer les branches",
+   "adm": true
+  },
+  {
+   "f": "Gérer les pasteurs / responsables",
+   "adm": true
+  },
+  {
+   "f": "Consulter les membres",
+   "adm": true
+  },
+  {
+   "f": "Consulter les rapports",
+   "adm": true
+  },
+  {
+   "f": "Générer le rapport du mois",
+   "adm": true
+  },
+  {
+   "f": "Consulter les finances",
+   "adm": true
+  },
+  {
+   "f": "Gérer les événements et activités de l'organisation",
+   "adm": true
+  },
+  {
+   "f": "Gérer les utilisateurs",
+   "adm": true
+  },
+  {
+   "f": "Modifier les paramètres",
+   "adm": false
+  }
+ ],
+ "pastors": [
+  {
+   "id": "p1",
+   "name": "Koffi T. Adjabla",
+   "sexe": "Homme",
+   "fn": "Pasteur principal",
+   "branchId": "cotonou",
+   "affType": "branche",
+   "phone": "+229 01 97 43 21 10",
+   "email": "koffi.adjabla@egdlg.org",
+   "address": "Gbégamey, Cotonou",
+   "entree": "10 sept. 2016",
+   "prise": "15 janv. 2018",
+   "status": "actif",
+   "historique": [
+    {
+     "branche": "Administration",
+     "fonction": "Pasteur stagiaire",
+     "periode": "2016 à 2018"
+    },
+    {
+     "branche": "Cotonou",
+     "fonction": "Pasteur principal",
+     "periode": "depuis janv. 2018"
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "name": "Marie-Ange Houédji",
+   "sexe": "Femme",
+   "fn": "Pasteure principale",
+   "branchId": "porto-novo",
+   "affType": "branche",
+   "phone": "+229 01 95 12 08 56",
+   "email": "ma.houedji@egdlg.org",
+   "address": "Houinmè, Porto-Novo",
+   "entree": "12 jan. 2020",
+   "prise": "3 mars 2020",
+   "status": "actif",
+   "historique": [
+    {
+     "branche": "Porto-Novo",
+     "fonction": "Pasteure principale",
+     "periode": "depuis mars 2020"
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "name": "Jonas Kpatchavi",
+   "sexe": "Homme",
+   "fn": "Pasteur principal",
+   "branchId": "parakou",
+   "affType": "branche",
+   "phone": "+229 01 93 21 77 90",
+   "email": "j.kpatchavi@egdlg.org",
+   "address": "Titirou, Parakou",
+   "entree": "1 juin 2022",
+   "prise": "22 sept. 2022",
+   "status": "actif",
+   "historique": [
+    {
+     "branche": "Cotonou",
+     "fonction": "Pasteur adjoint",
+     "periode": "2022"
+    },
+    {
+     "branche": "Parakou",
+     "fonction": "Pasteur principal",
+     "periode": "depuis sept. 2022"
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "name": "David Zinsou",
+   "sexe": "Homme",
+   "fn": "Coordinateur, Ministère central",
+   "branchId": null,
+   "affType": "administration",
+   "phone": "+229 01 90 44 12 03",
+   "email": "d.zinsou@egdlg.org",
+   "address": "Cotonou",
+   "entree": "8 juin 2019",
+   "prise": "8 juin 2019",
+   "status": "actif",
+   "historique": [
+    {
+     "branche": "Administration",
+     "fonction": "Coordinateur",
+     "periode": "depuis juin 2019"
+    }
+   ]
+  },
+  {
+   "id": "p5",
+   "name": "Léonce Gbaguidi",
+   "sexe": "Homme",
+   "fn": "Pasteur principal",
+   "branchId": "abomey-calavi",
+   "affType": "branche",
+   "phone": "+229 01 96 30 18 45",
+   "email": "l.gbaguidi@egdlg.org",
+   "address": "Godomey, Abomey-Calavi",
+   "entree": "5 janv. 2024",
+   "prise": "10 févr. 2024",
+   "status": "actif",
+   "historique": [
+    {
+     "branche": "Abomey-Calavi",
+     "fonction": "Pasteur principal",
+     "periode": "depuis févr. 2024"
+    }
+   ]
+  }
+ ],
+ "branches": [
+  {
+   "id": "cotonou",
+   "name": "Église de la Grâce - Cotonou",
+   "code": "BR-001",
+   "country": "Bénin",
+   "region": "Littoral",
+   "city": "Cotonou",
+   "quartier": "Gbégamey",
+   "address": "Rue 214, Gbégamey, Cotonou",
+   "phone": "+229 01 97 43 21 10",
+   "email": "cotonou@egdlg.org",
+   "created": "15 janv. 2018",
+   "status": "active",
+   "pastor": {
+    "id": "p1",
+    "name": "Koffi T. Adjabla",
+    "fn": "Pasteur principal",
+    "phone": "+229 01 97 43 21 10",
+    "email": "koffi.adjabla@egdlg.org",
+    "since": "15 janv. 2018"
+   },
+   "members": {
+    "total": 248,
+    "m": 124,
+    "f": 124,
+    "jeunes": 68,
+    "enfants": 46,
+    "nouveaux": 9
+   }
+  },
+  {
+   "id": "porto-novo",
+   "name": "Église de la Grâce - Porto-Novo",
+   "code": "BR-002",
+   "country": "Bénin",
+   "region": "Ouémé",
+   "city": "Porto-Novo",
+   "quartier": "Houinmè",
+   "address": "Avenue Jean Bayol, Houinmè, Porto-Novo",
+   "phone": "+229 01 95 12 08 56",
+   "email": "porto-novo@egdlg.org",
+   "created": "3 mars 2020",
+   "status": "active",
+   "pastor": {
+    "id": "p2",
+    "name": "Marie-Ange Houédji",
+    "fn": "Pasteure principale",
+    "phone": "+229 01 95 12 08 56",
+    "email": "ma.houedji@egdlg.org",
+    "since": "3 mars 2020"
+   },
+   "members": {
+    "total": 180,
+    "m": 91,
+    "f": 89,
+    "jeunes": 52,
+    "enfants": 31,
+    "nouveaux": 4
+   }
+  },
+  {
+   "id": "parakou",
+   "name": "Église de la Grâce - Parakou",
+   "code": "BR-003",
+   "country": "Bénin",
+   "region": "Borgou",
+   "city": "Parakou",
+   "quartier": "Titirou",
+   "address": "Quartier Titirou, secteur 4, Parakou",
+   "phone": "+229 01 93 21 77 90",
+   "email": "parakou@egdlg.org",
+   "created": "22 sept. 2022",
+   "status": "active",
+   "pastor": {
+    "id": "p3",
+    "name": "Jonas Kpatchavi",
+    "fn": "Pasteur principal",
+    "phone": "+229 01 93 21 77 90",
+    "email": "j.kpatchavi@egdlg.org",
+    "since": "22 sept. 2022"
+   },
+   "members": {
+    "total": 95,
+    "m": 48,
+    "f": 47,
+    "jeunes": 20,
+    "enfants": 15,
+    "nouveaux": 2
+   }
+  },
+  {
+   "id": "abomey-calavi",
+   "name": "Église de la Grâce - Abomey-Calavi",
+   "code": "BR-004",
+   "country": "Bénin",
+   "region": "Atlantique",
+   "city": "Abomey-Calavi",
+   "quartier": "Godomey",
+   "address": "Carrefour Godomey, Abomey-Calavi",
+   "phone": "+229 01 96 30 18 45",
+   "email": "abomey-calavi@egdlg.org",
+   "created": "10 févr. 2024",
+   "status": "active",
+   "pastor": {
+    "id": "p5",
+    "name": "Léonce Gbaguidi",
+    "fn": "Pasteur principal",
+    "phone": "+229 01 96 30 18 45",
+    "email": "l.gbaguidi@egdlg.org",
+    "since": "10 févr. 2024"
+   },
+   "members": {
+    "total": 62,
+    "m": 30,
+    "f": 32,
+    "jeunes": 18,
+    "enfants": 12,
+    "nouveaux": 5
+   }
+  }
+ ],
+ "orgUsers": [
+  {
+   "id": "u1",
+   "name": "Emmanuel Houngbédji",
+   "email": "emmanuel.houngbedji@egdlg.org",
+   "phone": "+229 01 21 30 45 12",
+   "fn": "Pasteur fondateur",
+   "role": "Fondateur",
+   "status": "actif",
+   "lastLogin": "Aujourd'hui, 08h12"
+  },
+  {
+   "id": "u2",
+   "name": "David Zinsou",
+   "email": "d.zinsou@egdlg.org",
+   "phone": "+229 01 90 44 12 03",
+   "fn": "Coordinateur",
+   "role": "Administrateur",
+   "status": "actif",
+   "lastLogin": "Hier, 17h40"
+  }
+ ],
+ "events": [
+  {
+   "id": "ev1",
+   "title": "Convention Nationale des Pasteurs 2026",
+   "type": "Convention",
+   "time": "09h00 à 17h00",
+   "place": "Cotonou, Temple central",
+   "description": "Rassemblement annuel de tous les pasteurs et responsables de l'organisation pour un temps de formation, de communion et de vision commune.",
+   "responsable": "Emmanuel Houngbédji",
+   "intervenants": "Pasteur Emmanuel Houngbédji, invités extérieurs à confirmer",
+   "target": "Tous les pasteurs et responsables",
+   "branchesConcernees": [
+    "cotonou",
+    "porto-novo",
+    "parakou"
+   ],
+   "status": "planifiee",
+   "off": 24,
+   "tasks": [
+    {
+     "t": "Confirmer le lieu",
+     "resp": "David Zinsou",
+     "off": 9,
+     "done": true
+    },
+    {
+     "t": "Informer les pasteurs",
+     "resp": "David Zinsou",
+     "off": 14,
+     "done": true
+    },
+    {
+     "t": "Préparer les supports",
+     "resp": "Emmanuel Houngbédji",
+     "off": 19,
+     "done": false
+    },
+    {
+     "t": "Confirmer les intervenants",
+     "resp": "David Zinsou",
+     "off": 17,
+     "done": false
+    }
+   ]
+  },
+  {
+   "id": "ev2",
+   "title": "Séminaire de formation des responsables",
+   "type": "Séminaire",
+   "time": "08h30 à 16h00",
+   "place": "Porto-Novo, Salle des responsables",
+   "description": "Formation destinée aux responsables de département sur la gestion d'équipe et le suivi des membres.",
+   "responsable": "David Zinsou",
+   "intervenants": "David Zinsou",
+   "target": "Responsables de département",
+   "branchesConcernees": [
+    "porto-novo"
+   ],
+   "status": "planifiee",
+   "off": 52,
+   "tasks": [
+    {
+     "t": "Confirmer le lieu",
+     "resp": "David Zinsou",
+     "off": 29,
+     "done": true
+    },
+    {
+     "t": "Envoyer les informations aux branches",
+     "resp": "David Zinsou",
+     "off": 34,
+     "done": false
+    }
+   ]
+  },
+  {
+   "id": "ev_o1",
+   "title": "Veillée de prière de l'organisation",
+   "type": "Activité de l'organisation",
+   "time": "20h00 à 05h00",
+   "place": "Cotonou, Temple central",
+   "description": "Veillée de prière annuelle réunissant les membres de toutes les branches.",
+   "responsable": "Emmanuel Houngbédji",
+   "intervenants": "Pasteur Emmanuel Houngbédji, invités extérieurs à confirmer",
+   "target": "Tous les membres",
+   "branchesConcernees": [
+    "cotonou",
+    "porto-novo",
+    "parakou"
+   ],
+   "status": "planifiee",
+   "off": 46,
+   "tasks": [
+    {
+     "t": "Confirmer le lieu",
+     "resp": "David Zinsou",
+     "off": 9,
+     "done": false
+    },
+    {
+     "t": "Informer les pasteurs",
+     "resp": "David Zinsou",
+     "off": 14,
+     "done": false
+    }
+   ]
+  },
+  {
+   "id": "ev_o2",
+   "title": "Assemblée générale de l'organisation",
+   "type": "Événement de l'organisation",
+   "time": "10h00 à 13h00",
+   "place": "Cotonou, Temple central",
+   "description": "Bilan annuel et orientations de l'organisation.",
+   "responsable": "Emmanuel Houngbédji",
+   "intervenants": "Pasteur Emmanuel Houngbédji, invités extérieurs à confirmer",
+   "target": "Pasteurs et responsables",
+   "branchesConcernees": [
+    "cotonou",
+    "porto-novo",
+    "parakou"
+   ],
+   "status": "planifiee",
+   "off": 67,
+   "tasks": [
+    {
+     "t": "Préparer les supports",
+     "resp": "Emmanuel Houngbédji",
+     "off": 19,
+     "done": false
+    },
+    {
+     "t": "Confirmer les intervenants",
+     "resp": "David Zinsou",
+     "off": 17,
+     "done": false
+    }
+   ]
+  }
+ ],
+ "branchMembersSample": [
+  {
+   "mat": "MEM-001",
+   "nom": "Koffi AGBENOU",
+   "sexe": "Homme",
+   "age": 40,
+   "naissance": "12 mars 1985",
+   "tel": "+229 01 97 43 21 10",
+   "profession": "Enseignant",
+   "quartier": "Gbégamey",
+   "dateIntegration": "15 janv. 2020",
+   "baptise": true,
+   "departement": "Groupe 1",
+   "statut": "Membre",
+   "matrimonial": "Marié",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1985-03-12",
+   "dateIntegrationISO": "2020-01-15"
+  },
+  {
+   "mat": "MEM-002",
+   "nom": "Ahoué LOKOSSOU",
+   "sexe": "Femme",
+   "age": 37,
+   "naissance": "2 juil. 1988",
+   "tel": "+229 01 98 76 54 32",
+   "profession": "Commerçante",
+   "quartier": "Akpakpa",
+   "dateIntegration": "8 mars 2019",
+   "baptise": true,
+   "departement": "Groupe 2",
+   "statut": "Membre",
+   "matrimonial": "Mariée",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1988-07-02",
+   "dateIntegrationISO": "2019-03-08"
+  },
+  {
+   "mat": "MEM-003",
+   "nom": "Jonas DOSSOU",
+   "sexe": "Homme",
+   "age": 22,
+   "naissance": "19 sept. 2003",
+   "tel": "+229 01 96 32 18 77",
+   "profession": "Étudiant",
+   "quartier": "Haie Vive",
+   "dateIntegration": "3 juin 2022",
+   "baptise": true,
+   "departement": "Groupe Jeunes",
+   "statut": "Membre",
+   "matrimonial": "Célibataire",
+   "categorie": "Jeune",
+   "status": "actif",
+   "naissanceISO": "2003-09-19",
+   "dateIntegrationISO": "2022-06-03"
+  },
+  {
+   "mat": "MEM-004",
+   "nom": "Grâce HOUNKPE",
+   "sexe": "Femme",
+   "age": 29,
+   "naissance": "25 avr. 1996",
+   "tel": "+229 01 95 12 08 56",
+   "profession": "Infirmière",
+   "quartier": "Fidjrossè",
+   "dateIntegration": "12 déc. 2023",
+   "baptise": false,
+   "departement": "Groupe 3",
+   "statut": "Nouveau converti",
+   "matrimonial": "Célibataire",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1996-04-25",
+   "dateIntegrationISO": "2023-12-12"
+  },
+  {
+   "mat": "MEM-005",
+   "nom": "Emmanuel KPATCHA",
+   "sexe": "Homme",
+   "age": 10,
+   "naissance": "6 févr. 2015",
+   "tel": "+229 01 94 37 65 43",
+   "profession": "Non renseignée",
+   "quartier": "Cadjèhoun",
+   "dateIntegration": "20 janv. 2018",
+   "baptise": false,
+   "departement": "Groupe Enfants",
+   "statut": "Membre",
+   "matrimonial": "Non renseigné",
+   "categorie": "Enfant",
+   "status": "actif",
+   "naissanceISO": "2015-02-06",
+   "dateIntegrationISO": "2018-01-20"
+  },
+  {
+   "mat": "MEM-006",
+   "nom": "Sara TCHIN",
+   "sexe": "Femme",
+   "age": 19,
+   "naissance": "14 oct. 2006",
+   "tel": "+229 01 93 21 77 90",
+   "profession": "Couturière",
+   "quartier": "Akpakpa",
+   "dateIntegration": "5 mai 2021",
+   "baptise": true,
+   "departement": "Groupe Jeunes",
+   "statut": "Membre",
+   "matrimonial": "Célibataire",
+   "categorie": "Jeune",
+   "status": "actif",
+   "naissanceISO": "2006-10-14",
+   "dateIntegrationISO": "2021-05-05"
+  },
+  {
+   "mat": "MEM-007",
+   "nom": "Paul AHOUANSOU",
+   "sexe": "Homme",
+   "age": 52,
+   "naissance": "3 nov. 1973",
+   "tel": "+229 01 91 22 45 60",
+   "profession": "Mécanicien",
+   "quartier": "Zogbo",
+   "dateIntegration": "10 sept. 2016",
+   "baptise": true,
+   "departement": "Groupe 1",
+   "statut": "Membre",
+   "matrimonial": "Marié",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1973-11-03",
+   "dateIntegrationISO": "2016-09-10"
+  },
+  {
+   "mat": "MEM-008",
+   "nom": "Béatrice ZOSSOU",
+   "sexe": "Femme",
+   "age": 45,
+   "naissance": "22 janv. 1980",
+   "tel": "+229 01 90 88 12 34",
+   "profession": "Institutrice",
+   "quartier": "Fidjrossè",
+   "dateIntegration": "1 avr. 2017",
+   "baptise": true,
+   "departement": "Groupe 2",
+   "statut": "Membre",
+   "matrimonial": "Mariée",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1980-01-22",
+   "dateIntegrationISO": "2017-04-01"
+  },
+  {
+   "mat": "MEM-009",
+   "nom": "David AGOSSOU",
+   "sexe": "Homme",
+   "age": 16,
+   "naissance": "8 mai 2009",
+   "tel": "+229 01 97 65 43 21",
+   "profession": "Élève",
+   "quartier": "Agla",
+   "dateIntegration": "14 juin 2023",
+   "baptise": false,
+   "departement": "Groupe Jeunes",
+   "statut": "Membre",
+   "matrimonial": "Célibataire",
+   "categorie": "Jeune",
+   "status": "actif",
+   "naissanceISO": "2009-05-08",
+   "dateIntegrationISO": "2023-06-14"
+  },
+  {
+   "mat": "MEM-010",
+   "nom": "Rachelle SOSSOU",
+   "sexe": "Femme",
+   "age": 33,
+   "naissance": "17 août 1992",
+   "tel": "+229 01 96 54 32 10",
+   "profession": "Comptable",
+   "quartier": "Akpakpa",
+   "dateIntegration": "9 nov. 2020",
+   "baptise": true,
+   "departement": "Groupe 3",
+   "statut": "Membre",
+   "matrimonial": "Divorcée",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1992-08-17",
+   "dateIntegrationISO": "2020-11-09"
+  },
+  {
+   "mat": "MEM-011",
+   "nom": "Michée HOUNSOU",
+   "sexe": "Homme",
+   "age": 8,
+   "naissance": "30 déc. 2017",
+   "tel": "Non renseigné",
+   "profession": "Non renseignée",
+   "quartier": "Gbégamey",
+   "dateIntegration": "2 janv. 2019",
+   "baptise": false,
+   "departement": "Groupe Enfants",
+   "statut": "Membre",
+   "matrimonial": "Non renseigné",
+   "categorie": "Enfant",
+   "status": "actif",
+   "naissanceISO": "2017-12-30",
+   "dateIntegrationISO": "2019-01-02"
+  },
+  {
+   "mat": "MEM-012",
+   "nom": "Espérance DEGLA",
+   "sexe": "Femme",
+   "age": 24,
+   "naissance": "11 mars 2001",
+   "tel": "+229 01 95 43 21 09",
+   "profession": "Coiffeuse",
+   "quartier": "Fidjrossè",
+   "dateIntegration": "20 juil. 2024",
+   "baptise": false,
+   "departement": "Groupe Jeunes",
+   "statut": "Nouveau converti",
+   "matrimonial": "Célibataire",
+   "categorie": "Jeune",
+   "status": "actif",
+   "naissanceISO": "2001-03-11",
+   "dateIntegrationISO": "2024-07-20"
+  },
+  {
+   "mat": "MEM-013",
+   "nom": "Isaac GBAGUIDI",
+   "sexe": "Homme",
+   "age": 61,
+   "naissance": "5 mai 1964",
+   "tel": "+229 01 94 12 34 56",
+   "profession": "Retraité",
+   "quartier": "Haie Vive",
+   "dateIntegration": "15 mars 2015",
+   "baptise": true,
+   "departement": "Groupe 1",
+   "statut": "Membre",
+   "matrimonial": "Marié",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1964-05-05",
+   "dateIntegrationISO": "2015-03-15"
+  },
+  {
+   "mat": "MEM-014",
+   "nom": "Nadège AKPOVI",
+   "sexe": "Femme",
+   "age": 39,
+   "naissance": "27 juin 1986",
+   "tel": "+229 01 93 65 87 43",
+   "profession": "Commerçante",
+   "quartier": "Akpakpa",
+   "dateIntegration": "6 févr. 2018",
+   "baptise": true,
+   "departement": "Groupe 2",
+   "statut": "Membre",
+   "matrimonial": "Mariée",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1986-06-27",
+   "dateIntegrationISO": "2018-02-06"
+  },
+  {
+   "mat": "MEM-015",
+   "nom": "Josué ADANDE",
+   "sexe": "Homme",
+   "age": 14,
+   "naissance": "19 avr. 2011",
+   "tel": "Non renseigné",
+   "profession": "Élève",
+   "quartier": "Cadjèhoun",
+   "dateIntegration": "11 sept. 2021",
+   "baptise": false,
+   "departement": "Groupe Enfants",
+   "statut": "Membre",
+   "matrimonial": "Non renseigné",
+   "categorie": "Enfant",
+   "status": "actif",
+   "naissanceISO": "2011-04-19",
+   "dateIntegrationISO": "2021-09-11"
+  },
+  {
+   "mat": "MEM-016",
+   "nom": "Solange AGUEH",
+   "sexe": "Femme",
+   "age": 55,
+   "naissance": "2 sept. 1970",
+   "tel": "+229 01 92 76 54 32",
+   "profession": "Couturière",
+   "quartier": "Fidjrossè",
+   "dateIntegration": "25 oct. 2014",
+   "baptise": true,
+   "departement": "Groupe 3",
+   "statut": "Membre",
+   "matrimonial": "Veuve",
+   "categorie": "Adulte",
+   "status": "actif",
+   "naissanceISO": "1970-09-02",
+   "dateIntegrationISO": "2014-10-25"
+  }
+ ]
+}
